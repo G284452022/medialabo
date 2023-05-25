@@ -15,9 +15,13 @@ let data = [
 
 // 練習4-2 メッセージ追加プログラム
 
-
+let h2 = document.querySelector('h2#ex42');
+p = document.createElement('p');
+p.textContent = '写真表と都市の都市の緯度経度のページです';
+p.style.textEmphasis='sesame green' 
 // 練習4-3 写真表作成プログラム
-
+h2 = document.querySelector('div#phototable');
+p=document.createElement('p');
 
 // 練習4-4 箇条書き削除プログラム
 

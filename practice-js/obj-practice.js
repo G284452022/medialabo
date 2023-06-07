@@ -22,6 +22,6 @@ for (let n of campus.buildingD) {
 //for (let i=0; i<arbuildingD.length; i=i+1) {
     //console.log(buildingD[i]);
 }
-for (let n of gakka) {
+for (let n of campus.gakka) {
     console.log(n);
 }

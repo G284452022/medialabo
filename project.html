@@ -1,23 +1,71 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>NHKの番組表</title>
-    <script src="tv-program.js" defer></script>
-  </head>
 
-  <body>
-    <h1>NHKの番組表</h1>
-	<ol>
-		<li>放送時間</li>
-		<li>番組名</li>
-		<li></li>
-	</ol>
+<head>
+  <meta charset="utf-8">
+  <title>世界の天気</title>
+  <link rel="stylesheet" href="project.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+  <script src="weather.js" defer=""></script>
+</head>
+<body><h1>天気を検索</h1>
+
+  <div id="label">
+  <label for="kensaku">天気の検索</label>
+  <select name="kensaku" id="kensaku">
     
-  
-  </body>
+      <option value="">検索する国の都市を選んでください</option>
+      <option value="360630">Cairo カイロ （エジプト）</option>
+      <option value="524901">Moscow モスクワ （ロシア）</option>
+      <option value="993800">Johannesburg ヨハネスブルク （南アフリカ）</option>
+      <option value="1816670">Beijing 北京 （中華人民共和国）</option>
+      <option value="1850147">Tokyo 東京 （日本）</option>
+      <option value="1880252">Singapore シンガポール</option>
+      <option value="2147714">Sydney シドニー （オーストラリア）</option>
+      <option value="2643743">London ロンドン （イギリス）</option>
+      <option value="2968815">Paris パリ （フランス）</option>
+      <option value="3451189">Rio de Janeiro リオデジャネイロ （ブラジル）</option>
+      <option value="5128581">New York ニューヨーク （アメリカ合衆国）</option>
+      <option value="5368361">Los Angeles ロサンゼルス （アメリカ合衆国）</option>
+    
+  </select>
+  <button id="botan">検索</button>
+  </div>
+  <h2>検索する都市:<span id="name">カイロ</span></h2>
+<table>
+  <tbody>
+     <tr>
+      <td>天気:</td>
+      <td><span id="weather">晴天</span></td>
+     </tr>
+      <tr>
+            <td>最高気温:</td>
+            <td><span id="maxtemp">19.12</span></td>
+      </tr>
+      <tr>
+          <td>最低気温:</td>
+          <td><span id="mintemp">18.36</span></td>
+      </tr>
+      <tr>
+        <td>湿度:</td>
+        <td><span id="situdo">34</span></td>
+      </tr>
+      <tr>
+          <td>緯度:</td>
+          <td><span id="ido">30.0626</span></td>
+      </tr>
+      <tr>
+          <td>経度:</td>
+          <td><span id="keido">31.2497</span></td>
+      </tr>
+      <tr>
+          <td>風速:</td>
+          <td><span id="husoku">0</span></td>
+      </tr>
+      <tr>
+          <td>風向:</td>
+          <td><span id="hukou">0</span></td>
+      </tr>
+  </tbody>
+</table>
+</body>
 </html>
-<!--let s= g1 ;
-let g= 0000 ;
-
-nnk/'+s+'-'+g+'-j.json';
